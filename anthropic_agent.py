@@ -8,7 +8,7 @@ config.read('config.ini')
 API_KEY = config.get('api', 'key')
 
 class Agent:
-    def __init__(self, api_key, model="claude-v1.3"):
+    def __init__(self, api_key, model="claude-2"): # claude-v1.3
         self.api_key = api_key
         self.model = model
         self.client = anthropic.Client(api_key)
